@@ -1,7 +1,5 @@
 package automation.constant;
 
-import org.openqa.selenium.By;
-
 public class CT_Account {
 //	public static By ELEMENT_USERNAME_TEXTBOX = By.id("username");
 //	public static By ELEMENT_PASSWORD_TEXTBOX = By.id("password");
@@ -11,5 +9,8 @@ public class CT_Account {
 //	public static By ELEMENT_LOGOUT_LINK = By.xpath("//*[text()='Logout']/..");
 	
 public static String webURL = "https://bepantoan.vn/";
- 
+public static String DetailSanPham = "https://bepantoan.vn/bep-tu-binova-bi-868-it";
+	
 }
+ 
+ 
