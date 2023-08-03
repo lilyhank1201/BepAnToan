@@ -1,0 +1,7 @@
+automation\testsuite\BepTu_MuaTraGop.class
+automation\constant\CT_Common.class
+automation\pageLocator\BepTu_page.class
+automation\pageLocator\DanhMucSanPham.class
+automation\constant\CT_Account.class
+automation\common\TestLogger.class
+automation\common\CommonBase.class

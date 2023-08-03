@@ -8,8 +8,7 @@ public class CT_Account {
 //	public static By ELEMENT_LOGOUT_ICON = By.xpath("//*[text()='Logout']/../../..");
 //	public static By ELEMENT_LOGOUT_LINK = By.xpath("//*[text()='Logout']/..");
 	
-public static String webURL = "https://bepantoan.vn/";
-public static String DetailSanPham = "https://bepantoan.vn/bep-tu-binova-bi-868-it";
+public static String webURL = "https://bepantoan.vn/"; 
 	
 }
  
