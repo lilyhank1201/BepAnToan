@@ -17,15 +17,24 @@ public class BepTu_MuaTraGop extends CommonBase {
 	private BepTu_page GotoBepTu;
 
 	@BeforeTest
-	public void openChromeDriver() {  
+	public void openChromeDriver() {
 		driver = initChromeDrvier(CT_Account.webURL);
 	}
 
 	@Test
 	public void MuaTraGopSS() throws InterruptedException {
-		DanhMucSanPham Goto = new DanhMucSanPham(driver);
-		Goto.GotoDetail();
-		GotoBepTu = new BepTu_page(driver); 
+		DanhMucSanPham Gotodetail = new DanhMucSanPham(driver);
+		// Thực hiện chọn danh mục sản phẩm
+		Gotodetail.DanhMucSP();
+		// Thực hiện chọn hãng sản xuất
+		Gotodetail.HangSanXuatBinova();
+		// Thực hiện chọn mức giá
+		Gotodetail.Mucgiatu10den15tr();
+		// Thực hiện chọn xuất xứ
+		Gotodetail.btnXuatXuItaly();
+		// Thực hiện chọn số bếp
+		Gotodetail.btnHaiBep();
+		BepTu_page GotoBepTu = new BepTu_page(driver);
 		GotoBepTu.clickSanPhamBepTuBinova();
 		GotoBepTu.clickMuaTraGop();
 		assertTrue(GotoBepTu.isDangkymuatragopPopupDisplayed());
